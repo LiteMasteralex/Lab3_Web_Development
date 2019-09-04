@@ -8,6 +8,87 @@ body {
   padding: 0;
 }
 
+header {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.navbar {
+	background-color: gray;
+	color: white;
+	text-align: right
+}
+.menu {
+	display: none;
+}
+.logo { 
+	margin:  1%; 
+}
 .logo > img {
   width: 50px;
+}
+.product{
+	margin: 1%;
+	border: solid #D3D3D3;
+	border-width: 1px;
+	padding: 1%;
+}
+.product > p {
+	text-align: left;
+}
+.social {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: space-around;
+	text-align: center;
+}
+.social > li {
+	width: 30%;
+}
+
+@media (min-width: 600px) and (max-width: 990px) {
+	header {
+		flex-direction: row;
+		align-items: center;
+		justify-content: left;
+	}
+	h1 {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (min-width: 990px) {
+	header {
+		flex-direction: row;
+		align-items: center;
+		justify-content: left;
+	}
+	h1 {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	main {
+		flex-direction: row;
+	}
+	.hamburger {
+		display: none;
+	}
+	.menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: right;
+		list-style: none;
+		overflow: hidden;
+		text-align: center;
+	}
+	.menu > li {
+		margin: 1%;
+	}
 }
